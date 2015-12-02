@@ -1,0 +1,28 @@
+{
+    "name": "greeny/doctrine-entity-serializer",
+    "description": "Tool for serializing Doctrine entities to array",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomáš Blatný",
+            "email": "blatny.tomas@seznam.cz"
+        }
+    ],
+    "require": {
+        "doctrine/annotations": "^1.2",
+        "doctrine/orm": "^2.5"
+    },
+    "require-dev": {
+        "nette/tester": "^1.6"
+    },
+    "suggest": {
+        "nette/di": "Needed to use nette extension",
+	    "nette/caching": "To use nette/caching for cache"
+    },
+	"autoload": {
+		"psr-4": {
+			"greeny\\DoctrineEntitySerializer\\": "src/"
+		}
+	}
+}
